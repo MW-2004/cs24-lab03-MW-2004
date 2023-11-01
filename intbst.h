@@ -1,6 +1,5 @@
 // intbst.h
 // Binary search tree header file for CS 24 lab
-
 #ifndef INTBST_H
 #define INTBST_H
 
@@ -32,15 +31,13 @@ class IntBST {
  private:
 
     struct Node {
-	int info;
-	Node *left, *right, * parent;
-	// useful constructor:
-    Node(int v=0) : info(v), left(0), right(0), parent(0) { }
+        int info;
+        Node *left, *right, *parent;
+        // useful constructor:
+        Node(int v=0) : info(v), left(0), right(0), parent(0) { }
     };
-
     // just one instance variable (pointer to root node):
     Node *root;
-
     // recursive utility functions for use by public methods above
     Node* getNodeFor(int value, Node* n) const; // IMPLEMENT THIS FIRST: returns the node for a given value or NULL if none exists
     void clear(Node *n); // for destructor

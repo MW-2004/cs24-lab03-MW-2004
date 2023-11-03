@@ -39,7 +39,7 @@ class IntBST {
     // just one instance variable (pointer to root node):
     Node *root;
     // recursive utility functions for use by public methods above
-    Node* getNodeFor(int value, Node* n) const; // IMPLEMENT THIS FIRST: returns the node for a given value or NULL if none exists
+    Node *getNodeFor(int value, Node *n) const; // IMPLEMENT THIS FIRST: returns the node for a given value or NULL if none exists
     void clear(Node *n); // for destructor
     bool insert(int value, Node *n); // note overloading names for simplicity
     void printPreOrder(Node *n) const;
@@ -49,8 +49,8 @@ class IntBST {
     int count(Node *n) const;
 
     // these should be used by getPredecessor and getSuccessor, and ONE of them should be used by remove
-    Node* getSuccessorNode(int value) const;   // returns the Node containing the successor of the given value
-    Node* getPredecessorNode(int value) const; // returns the Node containing the predecessor of the given value 
+    Node *getSuccessorNode(int value) const;   // returns the Node containing the successor of the given value
+    Node *getPredecessorNode(int value) const; // returns the Node containing the predecessor of the given value 
 };
 
 #endif
